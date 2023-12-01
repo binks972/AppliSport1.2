@@ -11,6 +11,8 @@ public class JRejoindreEquipe extends AppCompatActivity {
 
     private View button3;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,12 +21,24 @@ public class JRejoindreEquipe extends AppCompatActivity {
         this.button3 = findViewById(R.id.button3);
 
         button3.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View v) {
-                Intent Page2 = new Intent(getApplicationContext(), JLogin.class );
+                Intent Page2 = new Intent(getApplicationContext(), JLogin.class);
                 startActivity(Page2);
                 finish();
             }
         });
+
     }
 }
+
+
+
+
+
+
+
+
+

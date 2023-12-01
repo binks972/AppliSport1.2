@@ -29,7 +29,7 @@ public class JLogin extends AppCompatActivity {
 
                 if (enteredPassword.equals(MOT_DE_PASSE_CORRECT)) {
                     // Mot de passe correct, ouvrir la nouvelle activité
-                    Intent intent = new Intent(JLogin.this, ListeEventJ.class);
+                    Intent intent = new Intent(JLogin.this, NomPresentAbs.class);
                     startActivity(intent);
                 } else {
                     // Mot de passe incorrect, afficher un message d'erreur

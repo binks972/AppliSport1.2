@@ -3,25 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#3498db">
 
     <EditText
         android:id="@+id/editTextNumberPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Mot de passe"
+
+        android:textSize="20sp"
         android:inputType="numberPassword"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:layout_width="288dp"
         android:layout_height="wrap_content"
-        android:text="Connexion"
         android:layout_below="@id/editTextNumberPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:text="Connexion"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textViewMessage"

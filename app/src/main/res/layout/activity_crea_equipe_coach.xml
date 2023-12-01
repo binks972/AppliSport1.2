@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3498db"
+    tools:context=".CreaEquipeCoach">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreationEquipeActivity"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="92dp">
+
+        <EditText
+            android:id="@+id/editNomEquipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom de l'équipe"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:id="@+id/editMotDePasse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editNomEquipe"
+            android:layout_marginTop="16dp"
+            android:hint="Mot de passe"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCreerEquipe"
+            android:layout_width="309dp"
+            android:layout_height="61dp"
+            android:layout_below="@id/editMotDePasse"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="198dp"
+            android:text="Créer l'équipe"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

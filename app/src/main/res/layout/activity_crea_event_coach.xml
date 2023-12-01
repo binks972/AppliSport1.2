@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3498db"
+    android:layout_height="match_parent"
+    tools:context=".CreaEventCoach">
+
+    <!-- Type d'événement -->
+    <TextView
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewTypeEvenement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type d'événement"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/checkBoxMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match"
+        android:textColor="#ffffff"
+        android:layout_below="@id/textViewTypeEvenement"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/checkBoxEntrainement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entraînement"
+        android:textColor="#ffffff"
+        android:layout_below="@id/checkBoxMatch"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/checkBoxReunion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réunion"
+        android:textColor="#ffffff"
+        android:layout_below="@id/checkBoxEntrainement"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Date et heure -->
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewDateHeure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date et heure"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/checkBoxReunion"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextDateHeure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Saisissez la date et l'heure"
+        android:inputType="text"
+        android:textColor="#ffffff"
+        android:layout_below="@id/textViewDateHeure"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Lieu -->
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewlieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lieu"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_below="@id/editTextDateHeure"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextLieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Saisissez le lieu"
+        android:inputType="text"
+        android:layout_below="@id/textViewlieu"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+
+        android:id="@+id/btnCreerEvenement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Créer votre événement"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextLieu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- TextView pour afficher le résultat -->
+    <TextView
+
+        android:id="@+id/textViewResultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ffffff"
+        android:layout_below="@+id/btnCreerEvenement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonEvent"
+        android:layout_width="194dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginBottom="20dp"
+        android:text="Vos Evenements"
+        android:textSize="10sp"/>
+
+
+</RelativeLayout>
+

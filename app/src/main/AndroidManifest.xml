@@ -13,6 +13,27 @@
         android:theme="@style/Theme.AppliSport1"
         tools:targetApi="31">
         <activity
+            android:name=".ListeJoueursPresentAbs"
+            android:exported="false" />
+        <activity
+            android:name=".CreaEventCoach"
+            android:exported="false" />
+        <activity
+            android:name=".CreaEventBtn"
+            android:exported="false" />
+        <activity
+            android:name=".CreaEquipeCoach"
+            android:exported="false" />
+        <activity
+            android:name=".ListeEquipesCoach"
+            android:exported="false" />
+        <activity
+            android:name=".PageCoachEntree"
+            android:exported="false" />
+        <activity
+            android:name=".NomPresentAbs"
+            android:exported="false" />
+        <activity
             android:name=".ListeEventJ"
             android:exported="false" />
         <activity
